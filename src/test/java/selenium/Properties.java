@@ -10,7 +10,7 @@ public class Properties {
 	public static final String LOGIN_OAUTH_URL = "id.payco.com/oauth2.0";
 	public static final String LOGIN_WINDOW = "paycoLoginPopup";
 	public static final String LOGIN_BUTTON = "payco-auth-popup";
-	public static final String ID= "";
-	public static final String PW= "";
+	public static final String ID= "dss97042@naver.com";
+	public static final String PW= "over2000!";
 	public static final int WAIT_TIME = 5;
 }

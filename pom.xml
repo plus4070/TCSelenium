@@ -3,13 +3,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>nhnent</groupId>
-  <artifactId>Selenium-ntaf</artifactId>
+  <artifactId>TCSelenium</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  
+
   <profiles>
     <profile>
       <id>local</id>
@@ -28,7 +28,7 @@
       </properties>
     </profile>
   </profiles>
-  
+
   <build>
     <resources>
       <!-- 공통 리소스 -->
@@ -41,7 +41,7 @@
       </resource>
     </resources>
   </build>
-  
+
   <dependencies>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
@@ -81,6 +81,6 @@
       <scope>runtime</scope>
     </dependency>
   </dependencies>
-  
+
 
 </project>
