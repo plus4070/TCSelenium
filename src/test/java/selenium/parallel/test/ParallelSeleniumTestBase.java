@@ -20,7 +20,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import selenium.Properties;
+import selenium.PropertiesUtil;
 
 @RunWith(Parallelized.class)
 public class ParallelSeleniumTestBase {
@@ -38,13 +38,13 @@ public class ParallelSeleniumTestBase {
                 DesiredCapabilities capFirefox = DesiredCapabilities.firefox();
                 capFirefox.setBrowserName("firefox");
                 capFirefox.setPlatform(Platform.WINDOWS);
-                driver = new RemoteWebDriver(new URL(Properties.LOCAL_URL), capFirefox);
+                driver = new RemoteWebDriver(new URL(PropertiesUtil.getProperty("LOCAL_URL")), capFirefox);
                 break;
             case CHROME:
                 DesiredCapabilities capChrome = DesiredCapabilities.chrome();
                 capChrome.setBrowserName("chrome");
                 capChrome.setPlatform(Platform.WINDOWS);
-                driver = new RemoteWebDriver(new URL(Properties.LOCAL_URL), capChrome);
+                driver = new RemoteWebDriver(new URL(PropertiesUtil.getProperty("LOCAL_URL")), capChrome);
                 break;
             default:
                 throw new IllegalStateException();
